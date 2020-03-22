@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>clapping</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-center">
+    <div class="container">
+        <h1 class="text-center">clapping for our heroes</h1>
+        <h4>Tap on emoji</h4>
+        <img src="Capture1.PNG" id="img" alt="clapping" class="img-fluid" onclick="sound()">
+        <audio id="my_audio" src="bg.mp3" loop="loop" important></audio>
+       <h3> copyright &copy; reserved by @_vaibhavrana</h3>
+    </div>
+    <script>
+        function sound() {
+            document.getElementById("img").setAttribute("src","giphy.gif");    
+            document.getElementById("my_audio").play();
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
